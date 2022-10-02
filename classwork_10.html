@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+         html{
+            width: 100%;
+           
+        }
+        body{
+            width: 100%;
+        }
+        .menu{
+            list-style-type: none;
+          /*  border-bottom: ;*/
+          display: flex;
+        
+        }
+       .three{
+        width: 100%;
+       }
+       .block_three{
+        order:3;
+       }
+        .block_second{
+           width: 53%;
+           order:2;
+        }
+        .block_first{
+           width: 20%;
+           order:1;
+          
+        }
+        .all{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+            align-items:center;
+            width: 100%;
+            flex-wrap: wrap;
+           
+        }
+        .block_three{
+            width: 20%;
+           
+        }
+        @media screen and (max-width: 960px){
+            .block_three{
+               display: none;
+            }
+        }
+        @media screen and (max-width: 560px){
+            .all{
+                flex-direction: column;
+                
+               
+            }
+            .block_first{
+                order: 3;
+            }
+        }
+      
+
+     
+    </style>
+</head>
+<body>
+    <div class="float">
+        <h1>Media</h1>
+        <ul class="menu">
+            <li>Home</li>
+            <li>News</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    
+    <div class="all">
+        <div class="block_first">
+             <h3>Last News</h3>
+             <h6>BUSNESS</h6>
+             <h3>Conseptur eos ipsam possimus</h3>
+        </div>
+        <div class="block_second">
+            <h2>CONSERTUP</h2>
+            <h6>by</h6>
+            <img src="urbanization.jpg" alt="city" class="three">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sed beatae excepturi quasi officia a explicabo debitis itaque iusto necessitatibus amet, cum possimus nam quidem maiores in iste dignissimos neque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo doloremque nostrum at magni sunt totam ad itaque, explicabo, unde eum excepturi quia eius? Veritatis commodi cumque doloremque modi distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus earum enim? Culpa mollitia quasi quas dicta. Atque in nisi, dolores placeat distinctio quas assumenda quo eligendi cum ullam ratione.</p>
+            <img class="icons" src="social_icons.png" alt="icons">
+        </div>
+        <div class="block_three">
+            <h3>Osed Accusamus</h3>
+            <img src="unnamed.png" alt="unnamed">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda doloremque vero ratione ea eveniet neque deleniti dignissimos voluptates explicabo. Amet, aliquid voluptas consequatur voluptate molestiae nulla maxime dolores dolore iusto!</p>
+            <img src="unnamed.png" alt="unnamed">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda doloremque vero ratione ea eveniet neque deleniti dignissimos voluptates explicabo. Amet, aliquid voluptas consequatur voluptate molestiae nulla maxime dolores dolore iusto!</p>
+        </div>
+    </div>
+    
+</body>
+</html>
